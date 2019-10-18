@@ -1,0 +1,58 @@
+﻿@model Cs390914_SD_3.Models.WorkoutDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WorkoutDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Trainers.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trainers.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Workout.TrainerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Workout.TrainerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkoutTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkoutTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EquipmentUsed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquipmentUsed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WorkoutDetailsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
